@@ -1,0 +1,29 @@
+body {
+	font-family: verdana;
+	padding:0px;
+	margin:15px;
+}
+
+a {
+	color: red;	
+	text-decoration: none;
+	background-color: black;
+	padding: 40px;
+	text-align: center;
+	border-radius: 950px;
+}
+
+a:hover {
+	color: blue;	
+	background-color: blue;
+	color: white;
+	
+}
+
+a:active {
+	color: yellow;	
+}
+
+a:visited {
+	color: white;	
+}

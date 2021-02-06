@@ -1,0 +1,17 @@
+body{
+    background-color: red;
+}
+
+
+table {
+                width: 80%;
+                border: 1px solid black;
+                background-color: blueviolet;
+                color: chartreuse;
+            }
+th {
+    color:yellow
+}
+td:nth-child(even) {
+    background-color: seagreen;
+}

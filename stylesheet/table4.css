@@ -1,0 +1,14 @@
+body {
+        background-color: chocolate;
+        color: cornflowerblue;
+    }
+table {
+        font-family: cursive;
+        border-collapse: collapse;
+        width: 80%;
+    }
+td th {
+        border: 5px solid black;
+        padding: 5px;
+        text-align: center;
+    }

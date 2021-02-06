@@ -1,0 +1,35 @@
+body {
+	font-family: verdana;
+	padding:0px;
+	margin:15px;
+}
+
+ul.inline_menu {
+	background-color: #5F5F5F;
+	padding: 10px;
+}
+
+ul.inline_menu li {
+	display:inline;
+	padding: 10px;
+}
+
+ul.inline_menu li a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+ul.inline_menu li:hover {
+	background-color: #000000;
+}
+
+ul li a {
+	color: red;
+}
+
+ul li a:visited {
+	color: yellow;
+}
+
+

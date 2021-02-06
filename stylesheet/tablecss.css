@@ -1,0 +1,10 @@
+table {
+		border: 10px;
+		padding: 12px;
+		background-color:red;
+		color: brown;
+}
+td th {
+		font-family: 'Times New Roman', Times, serif;
+		
+}

@@ -1,0 +1,24 @@
+body {
+	font-family: courier;
+	color: white;
+	font-size: 100%;
+}
+
+.heading_color {
+	background-color:blue;
+	border: 10px solid gold;
+}
+
+.para_color {
+	background-color:Tomato;
+	padding: 15px 155px;
+	margin: 115px;
+}
+
+.heading_odd_color {
+	background-color:pink;
+}
+
+.para_odd_color {
+	background-color:gray;
+}

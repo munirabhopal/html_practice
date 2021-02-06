@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	var i = 1;
+
+	
+	
+	function startseries(){
+			setInterval(function() {
+			var imagename = 'image'+i;
+			document.getElementById(imagename).src = "images/pic_bulbon.gif";
+			
+			if(i>1){
+				imagename = 'image'+(i-1);
+				document.getElementById(imagename).src = "images/pic_bulboff.gif";
+			}
+			
+			i++;
+			if(i>7) {
+				i = 1;
+			}
+			
+		},50);
+	
+		/*
+		document.getElementById('image1').src = "images/pic_bulbon.gif";
+		document.getElementById('image2').src = "images/pic_bulbon.gif";
+		document.getElementById('image3').src = "images/pic_bulbon.gif";
+		document.getElementById('image4').src = "images/pic_bulbon.gif";
+		document.getElementById('image5').src = "images/pic_bulbon.gif";
+		document.getElementById('image6').src = "images/pic_bulbon.gif";
+		document.getElementById('image7').src = "images/pic_bulbon.gif";
+		*/
+	}
+	
+</script>
+</head>
+<body>
+<button type="button" onclick="startseries()">
+	start series
+</button>
+
+<img id="image1" src="images/pic_bulboff.gif" />
+<img id="image2" src="images/pic_bulboff.gif" />
+<img id="image3" src="images/pic_bulboff.gif" />
+<img id="image4" src="images/pic_bulboff.gif" />
+<img id="image5" src="images/pic_bulboff.gif" />
+<img id="image6" src="images/pic_bulboff.gif" />
+<img id="image7" src="images/pic_bulboff.gif" />
+
+</body>
+</html>

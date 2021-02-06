@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Image Maps</h2>
+    <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+
+    <img src="C:\Users\Hp\Documents\munira12\images\workplace.jpg" alt="Workplace" usemap="#workmap" width="400"
+        height="379">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://en.wikipedia.org/wiki/Laptop">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://en.wikipedia.org/wiki/Mobile_phone">
+        <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://en.wikipedia.org/wiki/Coffee">
+    </map>
+
+    <img src="C:\Users\Hp\Documents\munira12\images\india map.jpg" usemap="#image-map">
+
+    <map name="image-map">
+        <area target="_blank" alt="Gujarat wiki" title="Gujarat wiki" href="https://en.wikipedia.org/wiki/Gujarat"
+            coords="28,208,67,202,100,206,110,223,110,246,100,264,93,270,64,261,39,234" shape="poly">
+        <area target="_blank" alt="Maharashtra wiki" title="Maharashtra wiki"
+            href="https://en.wikipedia.org/wiki/Maharashtra"
+            coords="104,347,110,333,133,319,150,309,170,290,202,287,204,261,144,255,111,258,89,279,93,312" shape="poly">
+        <area target="_blank" alt="Rajasthan wiki" title="Rajasthan wiki" href="https://en.wikipedia.org/wiki/Rajasthan"
+            coords="72,143,86,146,101,133,114,117,136,132,143,150,164,169,156,188,157,213,137,203,125,225,104,210,74,198,64,176,53,162,63,148"
+            shape="poly">
+    </map>
+
+</body>
+
+</html>
