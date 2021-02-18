@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  background-color:burlywood
+}
+th, td {
+  padding: 5px;
+  text-align: left;    
+}
+</style>
+</head>
+<body>
+
+<h2>Cell that spans two rows</h2>
+<p>To make a cell span more than one row, use the rowspan attribute.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Name:</th>
+    <td>Bill Gates</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Telephone:</th>
+    <td>55577854</td>
+  </tr>
+  <tr>
+    <td>55577855</td>
+  </tr>
+</table>
+
+<table style="width: 100%;">
+  <caption>Screen Awards</caption>
+    <tr>
+        <th>Category</th>
+        <th colspan="2">Recipient(S)</th>
+        <th>Result</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Best picture</td>
+        <td colspan="2">Veer zara </td>
+		<td rowspan="2" style="color: rgb(248, 6, 46);">Nominated</td>
+      <tr>
+		<td colspan="2">Rab ne bana di jodi</td>
+      </tr>
+	</tr>
+    <tr>
+            <td>Best director</td>
+            <td colspan="2">Phoebe Buffay</td>
+            <td style="color:green">Winner</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Best screenplay</td>
+        <td colspan="2">Irfan Khan</td>
+		<td rowspan="2" style="color: rgb(248, 6, 46);">Nominated</td> 
+     <tr> 
+		<td colspan="2">Sushant singh rajput</td>
+     </tr>
+    </tr>
+    <tr>
+            <td rowspan="2">Best International Feature film</td>
+            <td colspan="2">Chandler Bing</td>
+            <td rowspan="2" style="color:green">Winner</td>
+            <tr>
+              <td colspan="2">Joey Tribiani</td>
+            </tr>
+    
+          </tr>
+    <tr>
+        <td>Best Production Design film</td>
+        <td colspan="2">Monica Geller</td>
+        <td style="color:green">Winner</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Best Film Editting</td>
+        <td colspan="2">Ross Geller</td>
+        <td rowspan="2" style="color:green">Winner</td>
+      <tr>
+        <td colspan="2">Rachel green</td>
+      </tr>
+
+      </tr>
+
+
+</table>
+</body>
+</html>

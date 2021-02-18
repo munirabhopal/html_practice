@@ -1,14 +1,18 @@
 body {
-        background-color: chocolate;
-        color: cornflowerblue;
+        background-color:burlywood;
+        color: rgb(8, 91, 247);
     }
 table {
         font-family: cursive;
         border-collapse: collapse;
-        width: 80%;
+        width: 100%;
+        
     }
-td th {
-        border: 5px solid black;
+td, th {
+        border: 1px solid black;
         padding: 5px;
         text-align: center;
+    }
+tr:nth-child(even) {
+        color:brown
     }
