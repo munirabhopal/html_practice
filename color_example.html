@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#first_name {
+	color:blue
+}
+
+
+
+</style>
+</head>
+<body id="mybody">
+
+<h2>HTML Forms</h2>
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+<form action="" method="">
+	<table>
+		<tr>
+			<td><label for="first name">First Name:</label></td>
+			<td><input type="text" id="first_name" name="first name" value="Munira"></td>
+			<td><label for="last name">Last Name:</label></td>
+			<td><input type="text" id="last_name" name="last name" value ="Bhopal"></td>
+			<td><label for="last name">Favorite Color:</label></td>
+			<td><input type="color" id="color" name="color" onChange="changeTextColor()" value =""></td>
+			<td><input type="submit" value="submit"></td>
+		</tr>
+	</table>
+</form>
+
+
+<script>
+	function changeTextColor(){
+		var color = document.getElementById("color").value;
+		console.log(color);
+		document.getElementById("mybody").style.backgroundColor = color;
+	}
+</script>
+
+
+</body>
+</html>
