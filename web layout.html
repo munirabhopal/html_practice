@@ -5,47 +5,52 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Web Layout</title>
-	<div class="main">
 	<img style="float: left;" title="Arena Animation"  height="100px" alt="Arena Animation" src="images/logo.png"/>
 	</div>
 	<style>
-		.main{
+.body{
+			background-color: aquamarine;
+}
+.main{
 				background-color: rgb(139, 210, 243);
-				color: rgb(2, 2, 61);
+				color: rgb(220, 220, 238);
 		}
-		.topbar{
+.topbar{
 				float: right;
 				font-family: Verdana, Geneva, Tahoma, sans-serif;
 		}
-		ul {
+ul {
+        display: block;
 		list-style-type: none;
-		margin:  0px;
+		float: left;
+		margin: 0px 0px 0px 0px;
 		overflow: hidden;
-		background-color:yellowgreen
+		background-color: rgb(6, 42, 247);
+		width: 260%;
 		}
-		li {
+li {
 			float: left;
 		}
-		li a {
+li a {
 			display: block;
-			color: blueviolet;
+			color: rgb(28, 210, 241);
 			text-align: center;
 			padding: 20px;
 			text-decoration: none;
-		}
-		li a:hover {
-		background-color:rgb(205, 235, 134);
-		}
-		.nav{
+}
+li a:hover {
+		background-color:rgb(1, 1, 27);
+}
+.nav{
 				list-style-type: none;
-				padding: 50px;
+				padding: 0px;
 				margin: 50px;
-				width: 100%;
+				width: 34%;
 				display: block;
-		}
-	</style>
+}
+			</style>
 	</head>
-<body>
+<body class="body">
 	<div class="topbar">
 		<button onclick="document.location='default.asp'">LOG IN</button>
 		</div>
