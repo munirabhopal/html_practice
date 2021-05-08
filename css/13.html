@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-element</title>
+    <style>
+        h1::first-letter {
+            color: red;
+            font-size: 80px;
+        }
+
+        p::first-line {
+            color: olive;
+            font-variant: small-caps;
+        }
+        p::first-letter{
+            color: purple;
+            font-size: 50px;
+        }
+
+        p {
+            color: navy;
+            background-color:skyblue
+        }
+    p.intro::first-line{
+        color: slateblue;
+        font-variant: small-caps;
+        font-size: 30px;
+    }
+    h2::before{
+        content: url(smiley.gif);
+    }
+    h3::after{
+        content: url(smiley.gif);
+    }
+    ::marker{
+        color: green;
+        font-size: 20px;
+    }
+    ::selection {
+    color: red;
+    background: yellow;
+}
+    </style>
+</head>
+
+<body>
+    <h1>The Pseudo-element</h1>
+    <p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text.
+        And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and
+        more, and more.</p>
+    <p>You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</p>
+
+    <p class="intro">This is an introduction.</p>
+    <p>This is a paragraph with some text. A bit more text even.</p>
+
+    <h2>This is a heading</h2>
+    <p>The ::before pseudo-element inserts content before the content of an element.</p>
+
+    <h3>This is a heading</h3>
+    <p>The ::after pseudo-element inserts content after the content of an element.</p>
+
+    <h3>This is a heading</h3>
+
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
+      
+      <ol>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+      </ol>
+</body>
+
+</html>

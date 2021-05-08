@@ -1,67 +1,62 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-div p {
-  background-color: yellow;
-}
-div > p {
-        background-color: aqua;
-}
-div + p {
-        background-color:red;
-}
-div ~ p {
-        background-color: seagreen;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>simple selectors</title>
+  <style>
+    *{
+      text-align: left;
+      color:navy
+    }
+    p{ 
+      text-align: center;
+      color: red;
+    }
+  #para1{
+      text-align: right;
+      color: blue;
+      font-size: 100px;
+  }
+  .center{
+      text-align: left;
+      color: green;
+  }
+  h1,h2,p{
+      text-align: center;
+      color: brown;
+  }
+
+  </style>
 </head>
 <body>
+  <h1>Hello World!</h1>
+<h2>Smaller heading!</h2>
+<p>This is a paragraph.</p>
 
-<h2>Descendant Selector</h2>
-<p>The descendant selector matches all elements that are descendants of a specified element.</p>
+  <h1>Hello world!</h1>
 
-<div>
-  <p>Paragraph 1 in the div.</p>
-  <p>Paragraph 2 in the div.</p>
-  <section><p>Paragraph 3 in the div.</p></section> <!-- not Child but Descendant -->
-  <p>Paragraph 4 in the div.</p>
-</div>
+<p>Every element on the page will be affected by the style.</p>
+<p>Me too!</p>
+<p>And me!</p>
+<h1>Hello world!</h1>
 
-<p>Paragraph 4. Not in a div.</p>
-<p>Paragraph 5. Not in a div.</p>
-<h2>Adjacent Sibling Selector</h2>
+<p>Every element on the page will be affected by the style.</p>
+<p>Me too!</p>
+<p>And me!</p>
+<h1>Hello world!</h1>
 
-<p>The + selector is used to select an element that is directly after another specific element.</p>
-<p>The following example selects the first p element that are placed immediately after div elements:</p>
+<p>Every element on the page will be affected by the style.</p>
+<p>Me too!</p>
+<p>And me!</p>
 
-<div>
-  <p>Paragraph 1 in the div.</p>
-  <p>Paragraph 2 in the div.</p>
-</div>
-
-<p>Paragraph 3. After a div.</p>
-<p>Paragraph 4. After a div.</p>
-munir
-<div>
-  <p>Paragraph 5 in the div.</p>
-  <p>Paragraph 6 in the div.</p>
-</div>
-<h2>General Sibling Selector</h2>
-<p>The general sibling selector (~) selects all elements that are siblings of a specified element.</p>
-
-<p>Paragraph 1.</p>
-
-<div>
-  <p>Paragraph 2.</p>
-</div>
-
-<p>Paragraph 3.</p>
-<code>Some code.</code>
-<p>Paragraph 4.</p>
-
-<p>Paragraph 7. After a div.</p>
-<p>Paragraph 8. After a div.</p>
+<p>Every paragraph will be affected by the style.</p>
+<p>Me too!</p>
+<p>And me!</p>
+<p id="para1">Hello World!</p>
+<p>This paragraph is not affected by the style.</p>
+<h1 class="center">Red and center-aligned heading</h1>
+<p class="center">Red and center-aligned paragraph.</p> 
 </body>
 </html>

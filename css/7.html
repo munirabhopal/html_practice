@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-class selector</title>
+    <style>
+        div ~ p{
+            background-color: royalblue;
+            color: rgb(247, 11, 31);
+        }
+    </style>
+</head>
+<body>
+    <h1>Combinators</h1>
+    <h2>General Sibling Selector</h2>
+<p>The general sibling selector (~) selects all elements that are siblings of a specified element.</p>
+
+<p>Paragraph 1.</p>
+
+<div>
+  <p>Paragraph 2.</p>
+</div>
+
+<p>Paragraph 3.</p>
+<code>Some code.</code>
+<p>Paragraph 4.</p>
+<div>
+    <p>para 4</p>
+    <p>para 5</p>
+</div>
+<p>para 6</p>
+<p>para 7</p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-class selector</title>
+    <style>
+        div + p{
+            background-color: orchid;
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Combinators</h1>
+    <h2>Adjacent Sibling Selector</h2>
+
+<p>The + selector is used to select an element that is directly after another specific element.</p>
+<p>The following example selects the first p element that are placed immediately after div elements:</p>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+</div>
+
+<p>Paragraph 3. After a div.</p>
+<p>Paragraph 4. After a div.</p>
+
+<div>
+  <p>Paragraph 5 in the div.</p>
+  <p>Paragraph 6 in the div.</p>
+</div>
+
+<p>Paragraph 7. After a div.</p>
+<p>Paragraph 8. After a div.</p>
+<div>
+<p>Paragraph 9. After a div.</p>
+<p>Paragraph 10. After a div.</p>
+</div>
+
+<p>Paragraph 11. After a div.</p>
+<p>Paragraph 12. After a div.</p>
+
+</body>
+</html>

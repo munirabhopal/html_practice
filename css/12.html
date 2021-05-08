@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first child</title>
+    <style>
+        p:first-child{
+            color: red;
+        }
+    p i:first-child{
+            color: navy;
+    }   
+    q:lang(eng) {
+    quotes: "~" "~";
+  } 
+    </style>
+</head>
+<body>
+    <p>This is some text.</p>
+    <p>This is some text.</p>
+    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    <p>Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
+    <p>In this example, :lang defines the quotation marks for q elements with lang="eng":</p>
+</body>
+</html>
