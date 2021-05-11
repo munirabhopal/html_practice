@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+    background-color: rgb(100, 168, 231);
+    text-align: center;
+    color: navy;
+    text-decoration: overline;
+    text-transform: uppercase;
+    line-height: 0.5;
+    text-shadow: 5px 5px 10px blue;
+}
+
+h2 {
+    background-color: burlywood;
+    text-align: left;
+    color: red;
+    text-decoration: underline;
+    letter-spacing: -2px;
+    text-shadow: 2px 2px 5px crimson;
+}
+
+h3 {
+    background-color: rgb(132, 240, 179);
+    text-align: right;
+    color:green;
+    text-decoration: line-through;
+    letter-spacing: 2px;
+}
+p{
+    background-color: grey;
+    text-align: justify;
+    color:black;
+    word-spacing: 5px;
+    white-space: nowrap;
+}
+p.ex1{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    text-indent: 15px;
+}
+a{
+    text-decoration:none;
+}
+</style>
+</head>
+<body>
+
+<h1>Heading 1 (center)</h1>
+<h2>Heading 2 (left)</h2>
+<h3>Heading 3 (right)</h3>
+
+<p>The three headings above are aligned center, left and right.</p>
+<p>This is the default text direction.</p>
+
+<p class="ex1">This is right-to-left text direction.</p>
+
+<p>A link with no underline: <a href="https://www.w3schools.com">W3Schools.com</a></p>
+
+
+
+</body>
+</html>
