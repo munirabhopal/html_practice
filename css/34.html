@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        a:link {
+    color:rgb(88, 4, 4);
+    text-decoration: none;
+    background-color: coral;
+}
+
+a:visited {
+    color:yellow;
+  text-decoration: none;
+}
+
+a:hover {
+    color:green;
+  text-decoration: underline;
+  background-color: aqua;
+}
+
+a:active {
+    color:blue;
+  text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <h1>CSS links</h1>
+    <p><a href="default.asp" target="_blank"><b>this is a link</p></b></a>
+    <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+</body>
+</html>
