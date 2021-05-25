@@ -5,11 +5,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Web Layout</title>
-	<img style="float: left;" title="Arena Animation"  height="100px" alt="Arena Animation" src="images/logo.png"/>
-	</div>
 	<style>
 .body{
-			background-color: aquamarine;
+			background-color: aquamarine;			
+}
+.logo{
+		display: inline-block;
 }
 .main{
 				background-color: rgb(139, 210, 243);
@@ -45,12 +46,20 @@ li a:hover {
 				list-style-type: none;
 				padding: 0px;
 				margin: 50px;
-				width: 34%;
+				width: 30%;
 				display: block;
 }
-			</style>
+.animate{
+		height: 500px;
+		width: 500px;
+		
+}
+</style>
 	</head>
 <body class="body">
+	<div class="logo">
+		<img src="C:\Users\Hp\Documents\html_practice\images\logo.png" title="arena animation" height="50px" alt="Arena Animation"/>
+	</div>
 	<div class="topbar">
 		<button onclick="document.location='default.asp'">LOG IN</button>
 		</div>
@@ -67,6 +76,9 @@ li a:hover {
 			<li><a href="#service">Services</a></li>
 		</ul>
 	</nav>
+</div>
+<div class="animate">
+	<img src="C:\Users\Hp\Documents\html_practice\images\an.jpg">
 </div>
 </body>
 </html>
