@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .logo img{
+            width: 15vw;
+            margin-top: 0px;
+            height: 15vh;
+            top:5px;
+        }
+        .login {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 0px 2px;
+            cursor: pointer;
+            float: right;
+            transform: translate(0px, -80px);
+        }
+        .login:hover{
+             background-color: yellowgreen;
+        }
+        .header{
+            width: 100%;
+        }
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0px;
+        overflow: hidden;
+        background-color: greenyellow;
+    
+        }
+
+        li {
+        float: left;
+        }
+
+        li a {
+        display: block;
+        color: navy;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        margin:2px;
+
+        }
+
+        li a:hover:not(.active) {
+        background-color:yellowgreen;
+        }
+
+        .active {
+        background-color: green;
+        border: 3px solid yellow;
+
+        }
+        li a:hover:not(.about) {
+        background-color:yellowgreen;
+        }
+
+        .about {
+        background-color: green;
+        float: right;
+        border: 3px solid yellow;
+        }
+        .dish img {
+            width: 100%;
+            height: auto;
+            padding: 15px;
+        }
+        .bg{
+            background-image: url(../images/pulao.jpg);
+            width: 100vw;
+            height: 100vh;
+            background-repeat: no-repeat;
+        }
+        nav{
+            clear:both;
+           
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <div class="logo">
+        
+                <img src="../images/logo.png" alt="logo">
+            </div>
+            <div class="login">
+                Log in
+            </div>
+    </header>
+    <div>
+        <nav>
+            <ul>
+                <li class="active"><a href="#welcome">Welcome</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#delivery">Delivery</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#reservations">Reservations</a></li>
+                <li class="about"><a href="#about">About</a></li>
+                
+            </ul>
+    </div>
+</nav>
+    <div class="dish">
+        <img src="../images/noche buena.jpg" alt="dish">
+    </div>
+</body>
+</html>
