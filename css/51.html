@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial Gradients</title>
+    <style>
+        .grad1{
+            background-image: radial-gradient(red, yellow,green);
+            height: 100px;
+        }
+        .grad2{
+            background-image: radial-gradient(red 5%, yellow 10%,green 60%);
+            height: 100px;
+        }
+        .grad3{
+            background-image: radial-gradient(circle, red, yellow, green);
+            height: 200px;
+            width: 200px;
+        }
+        .grad4{
+            background-image: repeating-radial-gradient(red, yellow 10%,green 20%);
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Radial Gradients</h1>
+    <p>A radial gradient is defined by its center.
+
+        To create a radial gradient you must also define at least two color stops.</p>
+        <div class="grad1"></div>
+        <h1>Radial Gradient - Differently Spaced Color Stops</h1>
+        <div class="grad2"></div>
+        <h1>Set Shape</h1>
+        <div class="grad3"></div>
+        <h1>Repeating a radial-gradient</h1>
+        <div class="grad4"></div>
+</body>
+</html>

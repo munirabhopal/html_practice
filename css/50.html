@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gradient</title>
+    <title> linear gradient</title>
+    <style>
+        .grad1{
+            height: 100px;
+            background-image: linear-gradient(red,yellow);
+            background-color: red;
+        }
+        .grad2{
+            height: 100px;
+            background-image: linear-gradient(to right, red, yellow);
+            background-color:yellow;
+        }
+        .grad3{
+            background-image: linear-gradient(to bottom, red, yellow);
+            height: 100px;
+            background-color: red;
+        }
+        .grad4{
+            background-image: linear-gradient(90deg, red, yellow);
+            height: 100px;
+            background-color: yellow;
+        }
+        .grad5{
+            background-image: linear-gradient(to left, red,orange,yellow,green,blue,indigo,violet);
+            height: 100px;
+            background-color: red;
+        }
+        .grad6{
+            background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+            height: 100px;
+        }
+        .grad7{
+           background-image: repeating-linear-gradient(red, yellow 10%,green 20%);
+            height: 100px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>CSS Linear Gradients</h1>
+    <p>To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among. You can also set a starting point and a direction (or an angle) along with the gradient effect.</p>
+    <div class="grad1"></div>
+    <h1>Gradient direction right</h1>
+    <div class="grad2"></div>
+    <h1>Gradient direction bottom</h1>
+    <div class="grad3"></div>
+    <h1>Gradient Using Angles</h1>
+    <div class="grad4"></div>
+    <h1>Gradient Using Multiple Color Stops</h1>
+    <div class="grad5"></div>
+    <h1>Gradient Using Transparency</h1>
+    <div class="grad6"></div>
+    <h1>Gradient Repeating a linear-gradient</h1>
+    <div class="grad7"></div>
 </body>
 </html>

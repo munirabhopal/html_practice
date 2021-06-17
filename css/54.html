@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-Effects</title>
+    <style>
+        div.test1{
+            width: 200px;
+            border: 1px solid black;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: clip;
+        }
+        div.test2{
+            width: 200px;
+            border: 1px solid black;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        div.test1:hover{
+            overflow: visible;
+        }
+        div.test2:hover{
+            overflow: visible;
+        }
+        .test3{
+            width: 200px;
+            border: 1px solid black;
+            word-wrap: break-word;
+        }
+        .test4{
+            width: 200px;
+            border: 1px solid black;
+            word-break: break-all;
+        }
+        .test5{
+            width: 200px;
+            border: 1px solid black;
+            word-break:keep-all;
+        }
+        .test6{
+            writing-mode: horizontal-tb;
+        }
+        span.test7{
+            writing-mode:vertical-rl;
+        }
+        .test7{
+            writing-mode: vertical-rl;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Text Overflow, Word Wrap, Line Breaking Rules, and Writing Modes</h1>
+    <p>In this chapter you will learn about the following properties:</p>
+    <ul>
+        <li>text-overflow</li>
+        <li>word-wrap</li>
+        <li>word-break</li>
+        <li>word-break</li>
+    </ul>
+    <h1>The text-overflow Property</h1>
+<p>The following two paragraphs contains a long text that will not fit in the box.</p>
+
+<h2>text-overflow: clip:</h2>
+<div class="test1">This is some long text that will not fit in the box</div>
+
+<h2>text-overflow: ellipsis:</h2>
+<div class="test2">This is some long text that will not fit in the box</div>
+<h1>The word-wrap Property</h1>
+
+<p class="test3"> This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+<h1>The word-break Property</h1>
+
+<p class="test4">This paragraph contains some text. This line will-break-at-hyphens.</p>
+
+<p class="test5">This paragraph contains some text. The lines will break at any character.</p>
+
+<p><b>Note:</b> The word-break property is not supported in Opera 12 and earlier versions.</p>
+<h1>The writing-mode Property</h1>
+
+<p class="test6">Some text with default writing-mode.</p>
+
+<p>Some text with a span element with a <span class="test7">vertical-rl</span> writing-mode.</p>
+
+<p class="test7">Some text with writing-mode: vertical-rl.</p>
+</body>
+</html>
