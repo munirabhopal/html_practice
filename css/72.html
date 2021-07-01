@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-template</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif
+        }
+        .sidenav{
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top:0;
+            left: 0;
+            background-color: lightgreen;
+            overflow-x: hidden;
+        }
+        .sidenav a{
+            color: green;
+            padding: 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .sidenav a:hover{
+            background-color: yellowgreen;
+            color: rgb(1, 48, 1);
+        }
+        .content{
+            margin-left: 200px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidenav">
+        <a href="#home">Home</a>
+        <a href="#career">Career</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+
+    <div class="content">
+        <h1>CSS Template</h1>
+        <p>A full-height, fixed sidenav and content.</p>
+    </div>
+
+</body>
+</html>

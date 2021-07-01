@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+    <style>
+        :root {
+        --blue: skyblue;
+        --white: navy;
+        }
+        body{
+            background-color: var(--blue);
+        }
+        h2{
+            border-bottom: var(--blue);
+        }
+        .container{
+            background-color: var(--white);
+            padding: 15px;
+            color: var(--blue);
+            --font-size:25px;
+        }
+        button{
+            --blue: navy;
+            color: var(--blue);
+            padding: 6px;
+            border-radius: 5px solid var(--white);
+            cursor: pointer;
+        }
+        @media screen and (min-width: 450px) {
+            .container {
+                --fontsize: 50px;
+            }
+            :root {
+                --blue: lightblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Using var() function</h1>
+    <div class="container">
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rerum quam, inventore, eveniet nemo delectus velit id, accusamus sit ipsam eaque! Voluptate placeat laudantium, odit optio sit architecto officia mollitia?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo reiciendis cumque possimus quisquam, nobis voluptatum necessitatibus voluptate esse aperiam ex beatae harum odio magni ipsam asperiores a, vel quaerat optio.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam culpa eveniet a magnam. Quaerat enim fuga aperiam excepturi optio quae? Quibusdam explicabo velit perspiciatis minus. Corrupti accusamus quibusdam ipsum quidem.</p>
+        <p>
+            <button>Yes</button>
+            <button>No</button>
+        </p>
+    </div>
+</body>
+</html>
