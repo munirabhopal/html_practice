@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>glowing border using css</title>
+    <style>
+        body{
+            display:flex;
+            background-color: black;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .box {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            display: block;
+            background: linear-gradient(0deg, black, #4444);
+            color: white;
+            font-size: 2em;
+        }
+        .glowing::before{
+            content: '';
+            position: absolute;
+            left: -2px;
+            top: -2px;
+            background: linear-gradient(45deg, #e8f74d, #bd2681, #6512b9, #ff3300de, #5aabde);
+            background-size: 400%;
+            width: calc(100% + 5px );
+            height: calc(100% + 5px );
+            z-index: -1;
+            animation: glower 20s linear infinite;
+        }
+        @keyframes glower {
+            0% {
+                background-position: 0 0;
+            }
+            50% {
+                background-position: 400% 0;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box glowing">
+</body>
+</html>

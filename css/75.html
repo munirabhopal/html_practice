@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient glow</title>
+    <style>
+        *{
+            margin: 0;
+            top: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #000;
+            color: red;
+        }
+        .loader{
+            position: relative;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, transparent, transparent, 40%, #e5f403);
+            animation: animate 2s linear infinite;
+        }
+        .content{
+            font-size: 40px;
+            position: relative;
+            top: 90px;
+            right: 90px;
+            bottom: 90px;
+            left: 90px;
+            z-index: 10000;
+            align-items: center;
+            justify-content: center;
+        }
+        .loader:before{
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            right: 6px;
+            bottom: 6px;
+            background-color: #000;
+            border-radius: 50%;
+            z-index: 1000;
+        }
+        @keyframes animate{
+            0% {
+                transform: rotate(0deg);
+                filter: hue-rotate(0 deg);
+            }
+            100%{
+                transform: rotate(360deg);
+                filter: hue-rotate(360deg);
+            }
+        }
+        .loader:after{
+            content: '';
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            bottom: 0px;
+            background-color: #000;
+            background: linear-gradient(45deg, transparent, transparent 40%, #ffc300);
+            border-radius: 50%;
+            z-index: 1000;
+            z-index: 1;
+            filter: blur(10px);
+        }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <div class="content">MUNIRA BHOPAL</div>
+    </div>
+</body>
+</html>

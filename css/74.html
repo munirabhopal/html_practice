@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Badge</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 50vh;
+        }
+        .notification{
+            height: 80px;
+            width: 80px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            position: relative;
+            border-radius: 20px;
+        }
+        .link .img1 .img {
+            font-size: 60px;
+            color: black;
+            position: relative;
+        }
+        .link .badge {
+            right: -60px;
+            position: absolute;
+            top: -60px;
+            background-color: red;
+            height: 50px;
+            border-radius: 80px;
+            display: grid;
+            place-items: center;
+            color: white;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="notification">
+        <a href="#" class="link">
+            <div class="img1">
+                <img src="../images/insta.png" width="200px" height="200px">
+            </div>
+            <span class="badge">5</span>
+        </a>
+    </div>
+</body>
+</html>
