@@ -5,8 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>image-gallery</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+            color: green;
+            font-size: 50px;
+        }
+        div.gallery{
+            margin: 25px;
+            border: 5px solid black;
+            width: 180px;
+            float: left;
+            background-color: lightgreen;
+            box-shadow:0px 8px 16px 0px yellowgreen;
+            
+        }
+        div.gallery:hover{
+            border: 5px solid green;
+            width: 25%;
+            height: auto;
+
+        }
+        div.gallery img{
+            width: 100%;
+            height: auto;
+        }
+        div.desc{
+            padding: 10px;
+            text-align: center;
+        }
+        @media only screen and (min-width: 320px){
+            .gallery{
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width: 720px){
+            .gallery{
+                width: 50%;
+                float: left;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>RESTAURANT DISHES</h1>
+    <div class="gallery">
+        <a target="_blank" href="../restaurant/images/pulao.jpg">
+            <img src="../restaurant/images/pulao.jpg" alt="pulao" width="600px" height="400px">
+        </a>
+    <div class="desc">Pulao is a one pot rice dish made by cooking fragrant basmati rice with aromatic spices, herbs & sometimes stock.</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="../restaurant/images/soup.png">
+            <img src="../restaurant/images/soup.png" alt="soup" width="600px" height="400px">
+        </a>
+    <div class="desc">A soup is like a friend in need – an effective mood-changer, a soul-searcher, a nourisher.</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="../restaurant/images/chinese noodles.jpg">
+            <img src="../restaurant/images/chinese noodles.jpg" alt="chinese noodles" width="600px" height="400px">
+        </a>
+    <div class="desc">Noodles are an essential ingredient and staple in Chinese cuisine. </div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="../restaurant/images/thali.jpg">
+            <img src="../restaurant/images/thali.jpg" alt="thali" width="600px" height="400px">
+        </a>
+    <div class="desc">A typical punjabi thali will also have raita or curd.</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="../restaurant/images/dessert.jpg">
+            <img src="../restaurant/images/dessert.jpg" alt="dessert" width="600px" height="400px">
+        </a>
+    <div class="desc">Dessert is a course that concludes a meal.</div>
+    </div>
 </body>
 </html>

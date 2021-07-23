@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -162,4 +163,170 @@
 <p><b>Note:</b> When an animation is finished, it changes back to its original style.</p>
 <div class="div9"></div>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .div1{
+            width: 200px;
+            height: 100px;
+            background-color: lightgreen;
+            animation-name: munira;
+            animation-duration: 4s;
+            animation-delay: 1s;
+        }
+        @keyframes munira{
+            from{background-color: lightgreen;}
+            to{background-color: lightpink;}
+        }
+        .div2{
+            width: 200px;
+            height: 100px;
+            background-color: lightskyblue;
+            animation-name: zainab;
+            animation-duration: 5s;
+            position: relative;
+            animation-delay: -2s;
+        }
+        @keyframes zainab{
+            0% {background-color: green;}
+            25% {background-color: red;}
+            50% {background-color: blue;}
+            75% {background-color: yellow;}
+            100% {background-color: black;}
+        }
+        .div3{
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            animation-name: tasneem;
+            animation-duration: 5s;
+            animation-iteration-count: 2;
+            position: relative;
+            animation-fill-mode: forwards;
+        }
+        @keyframes tasneem{
+            0% {background-color: black; left: 0px; top: 0px}
+            25% {background-color: yellow;left: 200px; top: 0px}
+            50% {background-color: blue;left: 200px; top: 200px}
+            75% {background-color: red;left: 0px; top: 200px}
+            100% {background-color: green;left: 0px; top: 0px}
+        }
+        .div4{
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            animation-name: mustafa;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: relative;
+            animation-fill-mode: backwards ;
+            animation-timing-function: linear;
+        }
+        @keyframes mustafa{
+            0% {background-color: black; left: 200px;}
+            25% {background-color: yellow;left: 200px;}
+            50% {background-color: blue;left: 200px}
+            75% {background-color: red;left: 200px;}
+            100% {background-color: green;left: 200px;}
+        }
+        .div5{
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            animation-name: hozefa;
+            animation-duration: 5s;
+            animation-direction: normal;
+            position: relative;
+            animation-iteration-count: 2;
+            animation-fill-mode: both ;
+        }
+        @keyframes hozefa{
+            0% {background-color: black; left: 200px; }
+            75% {background-color: red;left: 200px; }
+            100% {background-color: green;left:200px;}
+        }.div6{
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            animation-name: mariya;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            position: relative;
+            animation-iteration-count: 2;
+        }
+        @keyframes mariya{
+            0% {background-color: black; left: 200px; }
+            25% {background-color: yellow;left: 200px; }
+            100% {background-color: green;left: 200px; }
+        }.div7{
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            animation-name: fatema;
+            animation-duration: 5s;
+            animation-direction: reverse;
+            position: relative;
+            animation-iteration-count: 2;
+        }
+        @keyframes fatema{
+            50% {background-color: blue;left: 200px;}
+            75% {background-color: red;left: 200px;}
+            100% {background-color: green;left: 200px;}
+        }.div8{
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            animation-name: ummehani;
+            animation-duration: 5s;
+            animation-direction: alternate-reverse;
+            position: relative;
+            animation-iteration-count: 2;
+        }
+        @keyframes ummehani{
+            0% {background-color: black; left: 200px;}
+            25% {background-color: yellow;left: 200px;}
+            100% {background-color: green;left: 200px;}
+        }
+        .div9{
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation: example 5s linear infinite alternate;
+        }
+        @keyframes example{
+            0%   {background-color:red; left:200px}
+            25%  {background-color:yellow; left:200px}
+            50%  {background-color:blue; left:200px}
+            75%  {background-color:green; left:200px}
+            100% {background-color:red; left:200px}
+        }
+    </style>
+</head>
+<body>
+    <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+<div class="div1"></div>
+
+<p><b>Note:</b> When an animation is finished, it changes back to its original style.</p>
+<div class="div2"></div>
+<p><b>Note:</b> When an animation is finished, it changes back to its original style.</p>
+<div class="div3"></div>
+<p><b>Note:</b> When an animation is finished, it changes back to its original style.</p>
+<div class="div4"></div>
+<p><b>Note:</b> When an animation is finished, it changes back to its original style.</p>
+<div class="div5"></div><p><b>Note:</b> When an animation is finished, it changes back to its original style.</p>
+<div class="div6"></div><p><b>Note:</b> When an animation is finished, it changes back to its original style.</p>
+<div class="div7"></div><p><b>Note:</b> When an animation is finished, it changes back to its original style.</p>
+<div class="div8"></div>
+<p><b>Note:</b> When an animation is finished, it changes back to its original style.</p>
+<div class="div9"></div>
+</body>
+>>>>>>> 1f893fef47375c1f6e189fa600c64e34ba66a034
 </html>

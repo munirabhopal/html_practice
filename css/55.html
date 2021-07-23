@@ -4,29 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web-Fonts</title>
+    <title>transition</title>
     <style>
-        @font-face {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            src: url(sansation_light.woff);
+        div{
+            width: 200px;
+            height: 100px;
+            background: red;
+            text-align: center;
+            transition: width 2s;
         }
-        @font-face {
-            font-family: myFirstFont;
-            src: url(sansation_bold.woff);
-            font-weight: bold;
-}
-        *{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        #div1{
+            transition-timing-function: ease-in;
+        }
+        #div2{
+            transition-timing-function: ease-in-out;
+        }#div3{
+            transition-timing-function: linear;
+        }#div4{
+            transition-timing-function: ease-out;
+        }#div5{
+            transition-timing-function: ease-in;
+        }
+        #div6{
+            transition-delay: 1s;
+        }
+        #div7{
+            transition: width 2s, height 2s, transform 2s;
+        }
+        div:hover{
+            width: 300px;
+        }
+        #div7:hover{
+            width: 300px;
+            height: 300px;
+            transform: rotate(180deg);
         }
     </style>
 </head>
 <body>
-    <h1>The @font-face Rule</h1>
+    <h1>The transition Property</h1>
 
-<div>
-With CSS, websites can use fonts other than the pre-selected "web-safe" fonts.
-</div>
-
-<p><b>Note:</b> Internet Explorer 8 and earlier, do not support the @font-face rule.</p>
+    <p>Hover over the div element below, to see the transition effect:</p>
+    <div id="div1">linear</div><br>
+    <div id="div2">ease</div><br>
+    <div id="div3">ease-in</div><br>
+    <div id="div4">ease-out</div><br>
+    <div id="div5">ease-in-out</div><br>
+    <div id="div6">delay</div><br>
+    <div id="div7">transition&transform</div><br>
+    
+    <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
 </body>
 </html>

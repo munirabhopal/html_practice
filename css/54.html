@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text-Effects</title>
     <style>
+        body{
+            background-color: lightskyblue;
+        }
         div.test1{
             width: 200px;
             border: 1px solid black;
@@ -50,6 +53,12 @@
         .test7{
             writing-mode: vertical-rl;
         }
+        @media only screen and (max-width:600px){
+            body{
+                background-color: lightgreen;
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -86,5 +95,6 @@
 <p>Some text with a span element with a <span class="test7">vertical-rl</span> writing-mode.</p>
 
 <p class="test7">Some text with writing-mode: vertical-rl.</p>
+
 </body>
 </html>

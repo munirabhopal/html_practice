@@ -4,55 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>transition</title>
+    <title>2D&3D-Transforms</title>
     <style>
-        div{
-            width: 200px;
+        div.box1{
             height: 100px;
-            background: red;
-            text-align: center;
-            transition: width 2s;
-        }
-        #div1{
-            transition-timing-function: ease-in;
-        }
-        #div2{
-            transition-timing-function: ease-in-out;
-        }#div3{
-            transition-timing-function: linear;
-        }#div4{
-            transition-timing-function: ease-out;
-        }#div5{
-            transition-timing-function: ease-in;
-        }
-        #div6{
-            transition-delay: 1s;
-        }
-        #div7{
-            transition: width 2s, height 2s, transform 2s;
-        }
-        div:hover{
             width: 300px;
+            background-color: lightgreen;
+            border: 1px solid green;
+            transform: translate(50px,100px);
         }
-        #div7:hover{
+        div.box2{
+            height: 100px;
             width: 300px;
-            height: 300px;
-            transform: rotate(180deg);
+            background-color: lightgreen;
+            border: 1px solid green;
+            transform: rotateX(20deg);    
+        }
+        div.box3{
+            height: 100px;
+            width: 300px;
+            background-color: lightgreen;
+            border: 1px solid green;
+            transform: rotateY(-20deg);
+        }
+        div.box4{
+            height: 100px;
+            width: 300px;
+            background-color: lightgreen;
+            border: 1px solid green;
+            transform: scale(1,1);
+        }
+        div.box5{
+            height: 100px;
+            width: 300px;
+            background-color: lightgreen;
+            border: 1px solid green;
+            transform: rotateZ(90deg);
         }
     </style>
 </head>
 <body>
-    <h1>The transition Property</h1>
+    <h1>The translate() Method</h1>
+<p>The translate() method moves an element from its current position:</p>
 
-    <p>Hover over the div element below, to see the transition effect:</p>
-    <div id="div1">linear</div><br>
-    <div id="div2">ease</div><br>
-    <div id="div3">ease-in</div><br>
-    <div id="div4">ease-out</div><br>
-    <div id="div5">ease-in-out</div><br>
-    <div id="div6">delay</div><br>
-    <div id="div7">transition&transform</div><br>
-    
-    <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+<div class="box1">
+This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+</div>
+<div style="padding: 200px;">
+<h1>The rotate() Method</h1>
+<p>The rotate() method rotates an element clockwise or counter-clockwise.</p>
+<div style="padding: 100px;">
+<div class="box2">
+This div element is rotated clockwise 20 degrees.
+</div>
+<div class="box3">
+    This div element is rotated clockwise -20 degrees.
+    </div>
+    <div style="padding:200px;">
+    <h1>The scale() Method</h1>
+<p>The scale() method increases or decreases the size of an element.</p>
+
+<div class="box4">
+This div element is two times of its original width, and three times of its original height.
+</div>
+<h1>The rotateZ() Method</h1>
+<p>The rotateZ() method rotates an element around its Z-axis at a given degree.</p>
+<div class="box5">
+    This div element is rotated 90 degrees.
+    </div>
+</div>
+</div>
+</div>
 </body>
-</html>
